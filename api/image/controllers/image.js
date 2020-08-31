@@ -6,7 +6,6 @@
  */
 
 module.exports = {
-
     findImage: async ctx=>{
     const {imageKey} = ctx.params
     const fetched =  await strapi.query('image').model.query(qb => {
